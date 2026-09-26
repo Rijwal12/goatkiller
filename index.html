@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>GOAT KILLER | Rule Your Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip">THE GAME STARTS HERE &nbsp; • &nbsp; GOAT KILLER SPORTS</div>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="GOAT KILLER home">
+        <span class="logo-mark">G</span><span class="logo-name">GOAT <span>KILLER</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">HOME</a><a href="#categories">CATEGORIES</a><a href="#products">SHOP</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-button" id="openCart" aria-label="Open shopping cart">BAG <span class="cart-count" id="cartCount">0</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <div class="eyebrow">No limits. No excuses.</div>
+        <h1>RULE<br><span class="outline">YOUR</span><br><span class="solid">GAME.</span></h1>
+        <p class="hero-copy">Get in the zone with GOAT KILLER. Discover sports essentials made for training, competing and giving your absolute best.</p>
+        <div class="hero-buttons"><a href="#products" class="btn">SHOP THE COLLECTION ↗</a><a href="#about" class="btn btn-outline">OUR STORY</a></div>
+        <div class="hero-note">BUILT FOR ATHLETES &nbsp; / &nbsp; MADE FOR THE GAME</div>
+      </div></div>
+      <div class="hero-badge">GOAT<br><span>★</span><br>KILLER</div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track">
+      <span>GO HARD <b>✦</b> PLAY HARD <b>✦</b> STAY HUNGRY <b>✦</b> BE UNSTOPPABLE <b>✦</b> </span>
+      <span>GO HARD <b>✦</b> PLAY HARD <b>✦</b> STAY HUNGRY <b>✦</b> BE UNSTOPPABLE <b>✦</b> </span>
+    </div></div>
+
+    <section class="section" id="categories"><div class="container">
+      <div class="reveal"><div class="eyebrow">Find your edge</div><h2 class="section-heading">PICK YOUR <span class="red">GAME.</span></h2><p class="section-description">From the field to the gym, get ready to take on your next challenge.</p></div>
+      <div class="category-grid">
+        <a href="#products" class="category-card reveal" data-category-link="Fitness"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80" alt="Gym equipment" loading="lazy"><div class="category-info"><h3>Fitness</h3><p>Stronger every single day.</p><span class="arrow">↗</span></div></a>
+        <a href="#products" class="category-card reveal" data-category-link="Sportswear"><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=700&q=80" alt="Runner in sportswear" loading="lazy"><div class="category-info"><h3>Sportswear</h3><p>Wear your ambition.</p><span class="arrow">↗</span></div></a>
+      </div>
+    </div></section>
+
+    <section class="section products-section" id="products"><div class="container">
+      <div class="products-top reveal"><div><div class="eyebrow">The gear edit</div><h2 class="section-heading">GEAR UP. <span class="red">GO HARD.</span></h2><p class="section-description">Explore our sample collection of sports essentials.</p></div>
+        <div class="filters" aria-label="Filter products"><button class="filter active" data-filter="All">ALL</button><button class="filter" data-filter="Football">FOOTBALL</button><button class="filter" data-filter="Fitness">FITNESS</button><button class="filter" data-filter="Sportswear">SPORTSWEAR</button></div>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card reveal" data-category="Football" data-name="Match Football" data-price="799"><div class="product-img"><img src="football.jpg"Football" loading="lazy"><span class="product-tag">SPORTS ESSENTIAL</span></div><div class="product-details"><div class="product-category">Football</div><h3>Match Football</h3><div class="product-price">₹799</div><button class="add-button">ADD TO BAG +</button></div></article>
+        <article class="product-card reveal" data-category="Fitness" data-name="Training Equipment" data-price="1299"><div class="product-img"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Fitness training equipment" loading="lazy"><span class="product-tag">TRAIN HARD</span></div><div class="product-details"><div class="product-category">Fitness</div><h3>Training Equipment</h3><div class="product-price">₹1,299</div><button class="add-button">ADD TO BAG +</button></div></article>
+        <article class="product-card reveal" data-category="Sportswear" data-name="Performance Shoes" data-price="999"><div class="product-img"><img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=600&q=80" alt="Athletic shoes" loading="lazy"><span class="product-tag">GAME READY</span></div><div class="product-details"><div class="product-category">Sportswear</div><h3>Performance Shoes</h3><div class="product-price">₹999</div><button class="add-button">ADD TO BAG +</button></div></article>
+        <article class="product-card reveal" data-category="Basketball" data-name="Basket ball" data-price="1499"><div class="product-img"><img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="Basketball player on the field" loading="lazy"><span class="product-tag">PLAY TO WIN</span></div><div class="product-details"><div class="product-category">Basket Ball</div><h3>Basket ball Kit</h3><div class="product-price">₹1,499</div><button class="add-button">ADD TO BAG +</button></div></article>
+      </div>
+      <p class="section-description product-note">Note: Product names, images and prices are placeholders. Replace them with your actual shop inventory.</p>
+    </div></section>
+
+    <section class="promo"><div class="container promo-content reveal"><div class="eyebrow">Your time is now</div><h2>DON'T JUST<br>PLAY THE GAME.</h2><h2 class="promo-redline">CHANGE IT.</h2><p>Ready for your next challenge? Find your gear and bring your best.</p><a href="#contact" class="btn">GET IN TOUCH ↗</a></div></section>
+
+    <section class="section" id="about"><div class="container about-grid">
+      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=85" alt="Athlete running on a track" loading="lazy"></div>
+      <div class="about-copy reveal"><div class="eyebrow">The GOAT KILLER spirit</div><h2 class="section-heading">MADE FOR THE <span class="red">HUNGRY.</span></h2><p>At GOAT KILLER, we believe every athlete has a game to change and a goal to chase. We're building a sports shop for people who love the game and want to show up ready.</p><p>Whether you are training, competing or playing for fun, our mission is to help you find the equipment and sports essentials you need.</p><div class="stats"><div class="stat"><strong>01</strong><small>ONE MINDSET</small></div><div class="stat"><strong>100%</strong><small>GAME SPIRIT</small></div><div class="stat"><strong>∞</strong><small>AMBITION</small></div></div></div>
+    </div></section>
+
+    <section class="section contact-section" id="contact"><div class="container">
+      <div class="reveal"><div class="eyebrow">Let's connect</div><h2 class="section-heading">LET'S TALK <span class="red">SPORTS.</span></h2><p class="section-description">Questions about our products? Contact the GOAT KILLER team.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item"><div class="contact-icon">✦</div><div><small>SHOP OWNER</small><strong>RIJWAL CJHAUHAN</strong></div></div>
+          <div class="contact-item"><div class="contact-icon">✉</div><div><small>EMAIL US</small><strong><a href="mailto:rijwal@gmail.com">rijwal@gmail.com</a></strong></div></div>
+          <div class="contact-item"><div class="contact-icon">☎</div><div><small>CALL US</small><strong><a href="tel:8091023582">8091023582</a></strong></div></div>
+          <a href="https://wa.me/918091023582" class="btn" target="_blank" rel="noopener">CHAT ON WHATSAPP ↗</a>
+        </div>
+        <form class="contact-form reveal" id="contactForm"><h3>SEND US A MESSAGE</h3><div class="form-row"><input type="text" id="customerName" placeholder="Your name" required><input type="tel" id="customerPhone" placeholder="Your phone number"></div><input type="email" id="customerEmail" placeholder="Your email address" required><textarea id="customerMessage" placeholder="Tell us what you're looking for..." required></textarea><button class="btn" type="submit">SEND MESSAGE ↗</button><div class="form-status" id="formStatus" aria-live="polite"></div></form>
+      </div>
+    </div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-main"><div><a class="logo" href="#home"><span class="logo-mark">G</span><span class="logo-name">GOAT <span>KILLER</span></span></a><p>Gear up. Show up. Rule your game. Sports essentials for athletes and sports lovers.</p></div><div class="footer-links"><a href="#home">HOME</a><a href="#categories">CATEGORIES</a><a href="#products">SHOP</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></div></div><div class="copyright"><span>© 2026 GOAT KILLER. ALL RIGHTS RESERVED.</span><span>DESIGNED FOR THE GAME.</span></div></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true"><div class="cart-header"><h2>YOUR BAG <span class="red">.</span></h2><button class="close-cart" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"><p class="cart-empty">Your bag is empty. Let's find your gear.</p></div><div class="cart-total"><div class="total-row"><span>TOTAL</span><span id="cartTotal">₹0</span></div><button class="btn checkout" id="checkoutButton">ORDER VIA WHATSAPP ↗</button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
